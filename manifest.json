@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/ToolJet/ToolJet/develop/plugins/schemas/manifest.schema.json",
+  "title": "SD PoC plugin",
+  "description": "A schema defining test datasource",
+  "type": "object",
+  "tj:version": "1.0.0",
+  "tj:source": {
+    "name": "SD PoC Int",
+    "kind": "sd-poc-int",
+    "type": "api"
+  },
+  "properties": {
+    "host": {
+      "type": "string",
+      "title": "Host",
+      "description": "Enter host"
+    }
+  },
+  "required": []
+}
