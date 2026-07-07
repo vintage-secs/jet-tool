@@ -1,12 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/ToolJet/ToolJet/develop/plugins/schemas/manifest.schema.json",
-  "title": "SD PoC plugin",
+  "title": "vintage PoC plugin",
   "description": "A schema defining test datasource",
   "type": "object",
   "tj:version": "1.0.0",
   "tj:source": {
-    "name": "SD PoC Int",
-    "kind": "sd-poc-int",
+    "name": "vintage PoC Int",
+    "kind": "vintage-poc-int",
     "type": "api"
   },
   "properties": {
