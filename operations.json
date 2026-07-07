@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/ToolJet/ToolJet/develop/plugins/schemas/operations.schema.json",
-  "title": "SD PoC Datasource",
+  "title": "vintage PoC Datasource",
   "description": "A schema defining test datasource",
   "type": "api",
   "defaults": {},
